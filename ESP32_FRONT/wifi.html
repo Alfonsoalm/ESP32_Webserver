@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title></title>
+  <meta content="ESP32 Admin tool v3.0" name="description">
+  <meta content="Html Admin Panel for ESP32 configurations" name="keywords">
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+  <!-- Vendor CSS Files -->
+  <link href="assets/css/bootstrap.css" rel="stylesheet">
+  <link href="assets/css/icons.css" rel="stylesheet">
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <!-- Other CSS File -->
+  <link href="assets/css/sweetalert.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: ESP32 Admin Tool - v3.0.0
+  * Author: iothost.org
+  ======================================================== -->
+</head>
+
+<body>
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center"> <!-- End Logo --> </header>
+  <!-- End Header -->
+  <!-- ======= Sidebar ======= -->
+  <aside id="sidebar" class="sidebar">
+    <ul class="sidebar-nav" id="sidebar-nav">
+      <!-- automatico -->     
+    </ul>
+  </aside>
+  <!-- End Sidebar-->
+  <main id="main" class="main">
+
+    <!-- <div class="alert alert-danger alert-dismissible fade show" role="alert">
+      <i class="bi bi-exclamation-octagon me-1"></i>
+      Se han realizado cambios, es necesario reiniciar el equipo!
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>  -->
+
+    <div class="pagetitle">
+      <!-- automatico -->      
+    </div>
+    <!-- End Page Title -->
+    <section class="section">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="card">
+            <div class="card-header">Configuración del WiFi</div>
+            <div class="card-body">
+              <!-- General Form Elements -->
+              <form id="form">
+                <div id="switchMode">
+                  <!-- auto - switch mode -->
+                </div>
+                <hr>
+                <div id="inputSSID">
+                  <!-- auto - input ssid -->                  
+                </div>
+                <div id="inputPassword">
+                  <!-- auto - input password -->                 
+                </div>
+                <div class="row mb-3 mt-3">
+                  <!-- Accordion configuración modo cliente -->
+                  <div class="accordion accordion-flush" id="accordionCliente">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-Cliente">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#flush-collapseCliente" aria-expanded="false"
+                          aria-controls="flush-collapseCliente">
+                          Opciones avanzadas modo cliente
+                        </button>
+                      </h2>
+                      <div id="flush-collapseCliente" class="accordion-collapse collapse"
+                        aria-labelledby="flush-Cliente" data-bs-parent="#accordionCliente">
+                        <div class="accordion-body">
+                          <div id="switchDHCP">
+                            <!-- auto - switch DHCP -->                            
+                          </div>
+                          <div id="inputIpv4">
+                            <!-- auto - input ipv4 -->                            
+                          </div>
+                          <div id="inputSubnet">
+                            <!-- auto - input Subnet -->                           
+                          </div>
+                          <div id="inputGateway">
+                            <!-- auto - input Gateway -->                            
+                          </div>
+                          <div id="inputDnsPrimary">
+                            <!-- auto - input dns_primary -->                            
+                          </div>
+                          <div id="inputDnsSecondary">
+                            <!-- auto - input dns_Secondary -->                           
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div><!-- End Accordion configuración modo cliente -->
+                </div>
+                <hr>
+                <div id="inputApSsid">
+                  <!-- auto - input Ap Ssid -->       
+                </div>
+                <div id="inputApPassword">
+                  <!-- auto - input Ap Password -->        
+                </div>
+                <div class="row mb-3">
+                  <!-- Accordion configuración modo punto de acceso -->
+                  <div class="accordion accordion-flush" id="accordionAP">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-AP">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#flush-collapseAP" aria-expanded="false" aria-controls="flush-collapseAP">
+                          Opciones avanzadas modo punto de acceso
+                        </button>
+                      </h2>
+                      <div id="flush-collapseAP" class="accordion-collapse collapse" aria-labelledby="flush-AP"
+                        data-bs-parent="#accordionAP">
+                        <div class="accordion-body">
+                          <div id="switchVisibility">
+                            <!-- auto - switch ap visibility -->             
+                          </div>
+                          <div id="inputApChanel">
+                            <!-- auto - input Ap chanel -->                            
+                          </div>
+                          <div id="inputApChanel">
+                            <!-- auto - input Ap chanel -->
+                          </div>
+                          <div id="inputApConnect">
+                            <!-- auto - input Ap connect -->                            
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div><!-- End Accordion configuración modo punto de acceso -->
+                </div>
+                <div class="row mb-3" id="btnSendWifi">                  
+                </div>
+              </form><!-- End General Form Elements -->
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6" id="cardScan">
+          
+          <!-- 
+          <card class="card">
+            <div class="card-body bg-secondary-light" id="scanBody">
+
+              <div class="badge bg-primary text-uppercase mt-3">0 Redes encontradas</div>
+
+              <div class="text-center mt-5 text-lg fs-4"><i class="bi bi-wifi text-success"
+                  style="font-size: 100px"></i>
+                <div class="text-center py-5">
+                  <h4 class="fw-bold text-success text-uppercase mb-0" id="scanH4">NINGUNA RED WIFI ENCONTRADA</h4>
+                </div>
+
+                <button class="btn btn-success me-1 mb-3" id="scanBtn">
+                  <i class="bi bi-fw bi-search opacity-50 me-1"></i>
+                  Escanear
+                </button>
+
+              </div>
+
+            </div>
+          </card> 
+          -->
+
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- End #main -->
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+    <div class="copyright">
+      © Copyright <strong><span>iothost.org</span></strong>. All Rights Reserved <strong><span>v1.0.0</span></strong>
+    </div>
+    <div class="credits">
+      Designed by <a href="https://iothost.org/">IOTHost</a>
+    </div>
+  </footer>
+  <!-- End Footer -->
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+  <!-- Vendor JS Files -->
+  <script src="assets/js/bundle.min.js"></script>
+  <!-- Other JS File -->
+  <script src="assets/js/sweetalert.js"></script>
+  <!-- Personal JS File -->
+  <script src="assets/js/app.js" type="module"></script>
+</body>
+
+</html>

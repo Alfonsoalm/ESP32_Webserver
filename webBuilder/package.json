@@ -1,0 +1,23 @@
+{
+  "name": "webbuilder",
+  "version": "1.0.0",
+  "description": "* npm install",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "IOTHOST",
+  "license": "ISC",
+  "devDependencies": {
+    "fancy-log": "^2.0.0",
+    "gulp": "^4.0.2",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-flatmap": "^1.0.2",
+    "gulp-gzip": "^1.4.2",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin-changba": "^7.1.1",
+    "gulp-uglify": "^3.0.2",
+    "pump": "^3.0.0"
+  }
+}

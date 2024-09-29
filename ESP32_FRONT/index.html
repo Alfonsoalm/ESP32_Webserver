@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title></title>
+  <meta content="ESP32 Admin tool v3.0" name="description">
+  <meta content="Html Admin Panel for ESP32 configurations" name="keywords">
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+  <!-- Vendor CSS Files -->
+  <link href="assets/css/bootstrap.css" rel="stylesheet">
+  <link href="assets/css/icons.css" rel="stylesheet">
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+      <!-- Other CSS File -->
+      <link href="assets/css/sweetalert.css" rel="stylesheet">
+  <!-- =======================================================
+  * Template Name: ESP32 Admin Tool - v3.0.0
+  * Author: iothost.org
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center"> <!-- header automatico --> </header>
+  <!-- End Header -->
+  <!-- ======= Sidebar ======= -->
+  <aside id="sidebar" class="sidebar">
+    <ul class="sidebar-nav" id="sidebar-nav">
+      <!-- automatico -->
+    </ul>
+  </aside>
+
+  <!-- End Sidebar-->
+  <main id="main" class="main">
+
+    <div class="pagetitle"> <!-- automatico --> </div>
+
+    <!-- End Page Title -->
+    <section class="section dashboard">
+      <div class="row">
+        <!-- Left side columns -->
+        <div class="col-lg-12">
+          <div class="row">
+
+            <!-- Serial Card -->
+            <div class="col-xxl-3 col-md-6" id="serialCard">
+              <!-- card automatica -->     
+            </div><!-- End serial Card -->
+            <!-- dispositivo Card -->
+            <div class="col-xxl-3 col-md-6" id="deviceCard">
+              <!-- card automatica -->
+            </div><!-- End dispositivo Card -->
+            <!-- reinicios Card -->
+            <div class="col-xxl-3 col-md-6" id="rebootsCard">
+              <!-- card automatica -->
+            </div><!-- End reinicios Card -->
+            <!-- activo Card -->
+            <div class="col-xxl-3 col-md-6" id="cardTimeActive">
+              <!-- card automatica -->
+            </div><!-- End activo Card -->
+
+            <!-- Inalambrico -->
+            <div class="col-lg-4 col-sm-12" id="wirelessCard">
+              <!-- Automatico -->              
+            </div><!-- End Inalambrico -->
+            <!-- Broker mqtt -->
+            <div class="col-lg-4 col-sm-12" id="brokerCard">
+              <!-- Automatico -->
+            </div><!-- End Broker mqtt -->
+            
+            <!-- Relays  -->
+            <div class="col-lg-4 col-sm-12" id="relaysCard">
+              <!-- automatico -->
+            </div><!-- End Relays -->
+
+            <!-- informacion general -->
+            <div class="col-lg-8 col-sm-12" id="infoCard">
+              <!-- Automatico -->
+            </div><!-- End informacion general -->
+
+            <!-- Estados -->
+            <div class="col-lg-4 col-sm-12">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Estados <span>| WIFI/SPIFFS/RAM/CPU</span></h5>
+                  <div class="row text-center">
+                    <div class="col-md-12 pb-2">
+                      <div class="card info-card revenue-card">
+                        <div class="card-body">
+                          <h5 class="card-title text-start">Calidad red WiFi:</h5>
+                          <li class="list-group-item align-items-center justify-content-between" id="liWiFi">
+                            <!-- progress automatico -->
+                          </li>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-12 pb-2">
+                      <div class="card info-card revenue-card">
+                        <div class="card-body">
+                          <h5 class="card-title text-start">SPIFFS Usada:</h5>
+                          <li class="list-group-item align-items-center justify-content-between" id="liSpiffs">
+                            <!-- progress automatico -->    
+                          </li>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-12 pb-2">
+                      <div class="card info-card revenue-card">
+                        <div class="card-body">
+                          <h5 class="card-title text-start">RAM Disponible:</h5>
+                          <li class="list-group-item align-items-center justify-content-between" id="liRam">
+                            <!-- progress automatico -->
+                          </li>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-12 pb-2" id="tempCard">
+                      <!-- card automatica -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End  estados -->
+          </div>
+        </div><!-- End Left side columns -->
+      </div>
+    </section>
+  </main>
+  <!-- End #main -->
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+    <div class="copyright">
+      © Copyright <strong><span>iothost.org</span></strong>. All Rights Reserved <strong><span>v1.0.0</span></strong>
+    </div>
+    <div class="credits">
+      Designed by <a href="https://iothost.org/">IOTHost</a>
+    </div>
+  </footer>
+  <!-- End Footer -->
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+  <!-- Vendor JS Files -->
+  <script src="assets/js/bundle.min.js"></script>
+      <!-- Other JS File -->
+      <script src="assets/js/sweetalert.js"></script>
+  <!-- Personal JS File -->
+  <script src="assets/js/app.js" type="module"></script>  
+</body>
+</html>
