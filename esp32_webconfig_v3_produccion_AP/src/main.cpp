@@ -15,7 +15,7 @@
 #include <Arduino.h>
 #include <EEPROM.h>
 #include <SPIFFS.h>
-#include <WIFI.h>
+#include <WiFi.h>
 #include <DNSServer.h>
 #include <ESPmDNS.h> 
 #include <ArduinoJson.h>
