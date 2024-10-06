@@ -15,7 +15,7 @@ pipeline {
                 sh '''
                 source ~/platformio_env/venv/bin/activate
                 cd ./esp32_webconfig_v3_produccion_AP
-                pio run
+                
                 deactivate
                 '''
             }
