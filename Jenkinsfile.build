@@ -25,6 +25,7 @@ pipeline {
     post {
         always {
             // Limpiar el directorio de construcción después de la ejecución
+            sh 'echo Limpiar'
             // cleanWs()
         }
     }
