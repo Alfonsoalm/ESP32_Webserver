@@ -13,7 +13,10 @@ pipeline {
             steps {
                 // Generar los archivos de construcción con CMake
                 sh '''
-                echo Compilando
+                source ~/platformio_env/venv/bin/activate
+                cd ./esp32_webconfig_v3_produccion_AP
+                pio run
+                deactivate
                 '''
             }
         }
