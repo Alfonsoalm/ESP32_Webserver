@@ -1,0 +1,28 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Prepare') {
+            steps {
+                // Crear un directorio para la construcción
+                sh 'mkdir -p build'
+            }
+        }
+
+        stage('Build') {
+            steps {
+                // Generar los archivos de construcción con CMake
+                sh '''
+                echo Compilando
+                '''
+            }
+        }
+    }
+
+    post {
+        always {
+            // Limpiar el directorio de construcción después de la ejecución
+            cleanWs()
+        }
+    }
+}
