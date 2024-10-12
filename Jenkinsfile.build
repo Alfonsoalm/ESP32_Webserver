@@ -19,6 +19,8 @@ pipeline {
                 cd /var/lib/jenkins/workspace/webserver_esp32
                 cd ./esp32_webconfig_v3_produccion_AP
                 pio run
+                echo [jenkins] Desactivando entorno virtual para platform io
+                deactivate
                 '''
             }
         }
@@ -44,9 +46,6 @@ pipeline {
         always {
             // Limpiar el directorio de construcción después de la ejecución
             sh '''
-                echo [jenkins] Desactivando entorno virtual para platform io
-                cd /var/lib/jenkins/
-                deactivate
                 echo Limpiar
                 '''
             cleanWs()
