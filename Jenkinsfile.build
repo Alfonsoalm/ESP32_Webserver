@@ -15,7 +15,7 @@ pipeline {
                 sh '''
                 cd ./esp32_webconfig_v3_produccion_AP
                 echo Activando entorno virtual para platform io
-                ./home/antonio/platformio_env/bin/activate
+                /home/antonio/platformio_env/bin/activate
                 deactivate
                 '''
             }
