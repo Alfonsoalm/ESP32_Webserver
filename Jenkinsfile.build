@@ -15,6 +15,7 @@ pipeline {
                 sh '''
                 whoami
                 id
+                pwd
                 cd /var/lib/jenkins/
                 echo Activando entorno virtual para platform io
                 . platformio_env/bin/activate
