@@ -18,6 +18,7 @@ pipeline {
                 cd /var/lib/jenkins/
                 echo Activando entorno virtual para platform io
                 . platformio_env/bin/activate
+                pwd
                 cd ./workspace/esp32_webconfig_v3_produccion_AP
                 pio run
                 deactivate
