@@ -15,7 +15,7 @@ pipeline {
                 sh '''
                 whoami
                 id
-                cd /home/antonio
+                cd /var/lib/jenkins/
                 echo Activando entorno virtual para platform io
                 . platformio_env/bin/activate
                 cd ./esp32_webconfig_v3_produccion_AP
